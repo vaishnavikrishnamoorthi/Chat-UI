@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Clone UI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 h-screen overflow-hidden">
+
+    <div class="flex h-full w-full max-w-[1600px] mx-auto shadow-2xl">
+        
+        <aside class="w-1/3 border-r border-gray-300 bg-white flex flex-col">
+            <div class="p-4 bg-gray-100 flex justify-between items-center border-b">
+                <img src="https://ui-avatars.com/api/?name=My+Profile" class="w-10 h-10 rounded-full cursor-pointer" alt="Profile">
+                <div class="flex space-x-4 text-gray-500">
+                    <button>💬</button>
+                    <button>⋮</button>
+                </div>
+            </div>
+
+            <div class="p-2 bg-white">
+                <div class="bg-gray-100 flex items-center px-3 py-1.5 rounded-lg">
+                    <span class="text-gray-400 text-sm">🔍</span>
+                    <input type="text" placeholder="Search or start new chat" class="bg-transparent ml-3 text-sm outline-none w-full">
+                </div>
+            </div>
+
+            <div class="flex-1 overflow-y-auto">
+                <div class="flex items-center p-3 hover:bg-gray-100 cursor-pointer border-b border-gray-100">
+                    <img src="https://ui-avatars.com/api/?name=John+Doe" class="w-12 h-12 rounded-full" alt="User">
+                    <div class="ml-4 flex-1">
+                        <div class="flex justify-between">
+                            <h3 class="text-sm font-semibold">John Doe</h3>
+                            <span class="text-xs text-gray-500">12:45 PM</span>
+                        </div>
+                        <p class="text-xs text-gray-500 truncate">Hey, are we still meeting today?</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center p-3 bg-gray-200 cursor-pointer border-b border-gray-100">
+                    <img src="https://ui-avatars.com/api/?name=Jane+Smith" class="w-12 h-12 rounded-full" alt="User">
+                    <div class="ml-4 flex-1">
+                        <div class="flex justify-between">
+                            <h3 class="text-sm font-semibold">Jane Smith</h3>
+                            <span class="text-xs text-gray-500">Yesterday</span>
+                        </div>
+                        <p class="text-xs text-gray-600 font-medium truncate">Check out this new Tailwind UI!</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="flex-1 flex flex-col bg-[#efeae2]">
+            <header class="p-3 bg-gray-100 flex justify-between items-center border-b">
+                <div class="flex items-center">
+                    <img src="https://ui-avatars.com/api/?name=Jane+Smith" class="w-10 h-10 rounded-full" alt="Active Chat">
+                    <div class="ml-3">
+                        <h2 class="text-sm font-semibold">Jane Smith</h2>
+                        <p class="text-xs text-gray-500">online</p>
+                    </div>
+                </div>
+                <div class="flex space-x-4 text-gray-500">
+                    <button>📞</button>
+                    <button>⋮</button>
+                </div>
+            </header>
+
+            <div class="flex-1 overflow-y-auto p-6 space-y-4">
+                <div class="flex">
+                    <div class="bg-white p-2 rounded-lg rounded-tl-none shadow text-sm max-w-xs">
+                        Hello! Have you seen the project updates?
+                        <span class="block text-[10px] text-gray-400 text-right mt-1">10:15 AM</span>
+                    </div>
+                </div>
+
+                <div class="flex justify-end">
+                    <div class="bg-[#dcf8c6] p-2 rounded-lg rounded-tr-none shadow text-sm max-w-xs">
+                        Not yet, I'll check them right now. 🚀
+                        <span class="block text-[10px] text-gray-400 text-right mt-1">10:16 AM</span>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="p-3 bg-gray-100 flex items-center space-x-4">
+                <button class="text-gray-500 text-xl">😊</button>
+                <button class="text-gray-500 text-xl">📎</button>
+                <input type="text" placeholder="Type a message" class="flex-1 bg-white p-2 rounded-lg outline-none text-sm">
+                <button class="text-gray-500 text-xl">🎙️</button>
+            </footer>
+        </main>
+
+    </div>
+
+</body>
+</html>
